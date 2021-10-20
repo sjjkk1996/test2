@@ -1,0 +1,22 @@
+    fieldset {
+      width: 700px;
+      margin: 0 auto;
+    }
+    .phone input{
+      width: 60px;
+    }
+    .birth input{
+          width: 40px;
+        }
+    thead {
+      text-align:center;
+      font-weight: bold;
+    }
+    .User_table{
+      border: 1px solid black;
+      margin: 0 auto;
+    }
+    .User_table td{
+      border: 1px solid black;
+    }
+    input{ margin-bottom : 3px; }

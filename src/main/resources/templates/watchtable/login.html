@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:blotck th:replace="~{/layout/base :: setContent(~{this::content})}">
+    <th:block th:fragment="content">
+        <fieldset>
+            <div id="login">
+                <h1>로그인</h1><br>
+                <form class="" action="http://localhost:8080/" method="get" name="frm">
+                    <span>아이디</span><input type="text" id="id"><br>
+                    <span>비밀번호</span><input type="password" id="pw"><br>
+                    <button type="button" name="button" id='btn' class="loginbtn">로그인</button>
+                    <br><a href="/watchtable/joinselect">/watchtable/joinselect(Guest)[회원가입선택]</a><br>
+
+                </form>
+            </div>
+        </fieldset>
+        <script th:inline="javascript">
+                window.onload = function() {
+                  document.getElementById('btn').onclick = function() {
+                    id = document.getElementById('id').value;
+                    pw = document.getElementById('pw').value;
+                    if(id == undefined || id =='') {
+                      alert('아이디를 확인하세요')
+                      document.getElementById('id').focus();
+                      return;
+                    }
+                    if(pw == undefined || pw =='') {
+                      alert('비밀번호를 확인하세요')
+                      document.getElementById('pw').focus();
+                      return;
+                    }
+                    alert("로그인");
+                    document.frm.submit();
+                  }
+                };
+
+        </script>
+    </th:block>
+</th:blotck>
+</html>

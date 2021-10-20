@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:blotck th:replace="~{/layout/base :: setContent(~{this::content})}">
+    <th:block th:fragment="content">
+        <h1 class="mt-4">My information correction</h1>
+        <a href="/watchtable/myinfocorrect">/watchtable/myinfocorrect(All Members)[수정확인]</a><br>
+        <a href="/watchtable/myinfo">/watchtable/myinfo(All Members)[취소]</a><br>
+    </th:block>
+</th:blotck>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+  <th:block th:fragment="content">
+    <h1>Main Page</h1>
+    <hr>
+    <h3>실제 메인화면에 나와야 할 것들</h3>
+    <a href="http://localhost:8080/">/watchtable/main(All)</a><br>
+    <a href="/watchtable/detailed">/watchtable/detailed(All)</a><br>
+    <a href="/watchtable/login">/watchtable/login(Guest)</a><br>
+    <a href="/watchtable/myinfo">/watchtable/myinfo(Member)</a><br>
+    <a href="/watchtable/manage">/watchtable/manage(Business member)</a><br>
+    <a href="/watchtable/admin">/watchtable/admin(Admin)</a><br>
+    <a href="/watchtable/oyj">/watchtable/oyj(Luv)</a><br>
+    <hr>
+    <h3>비회원 항목들</h3>
+    <a href="/watchtable/join">/watchtable/join(Guest)</a><br>
+    <a href="/watchtable/managerjoin">/watchtable/managerjoin(Guest)</a><br>
+    <a href="/watchtable/joinselect">/watchtable/joinselect(Guest)</a><br>
+    <hr>
+    <h3>일반회원 항목들</h3>
+    <a href="/watchtable/myinfocorrect">/watchtable/myinfocorrect(Member)</a><br>
+    <a href="/watchtable/checkpw">/watchtable/checkpw(All Members)</a><br>
+    <a href="/watchtable/myinfo">/watchtable/myinfo(All Members)</a><br>
+    <a href="/watchtable/myreview">/watchtable/myreview(Member)</a><br>
+    <hr>
+    <h3>사업자 회원 항목들</h3>
+    <a href="/watchtable/manageinfocorrect">/watchtable/manageinfocorrect(Business Member)</a><br>
+    <a href="/watchtable/manage">/watchtable/manage(Business Member)</a><br>
+    <hr>
+    <h3>관리자 항목들</h3>
+    <a href="/watchtable/approve">/watchtable/approve(Admin)[사업자승인]</a><br>
+    <a href="/watchtable/approvefiles">/watchtable/approvefiles(Admin)[사업자증명서확인]</a><br>
+
+  </th:block>
+</th:block>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:blotck th:replace="~{/layout/base :: setContent(~{this::content})}">
+    <th:block th:fragment="content">
+        <h1 class="mt-4">Join Select</h1>
+        <a href="/watchtable/join">/watchtable/join(Guest)</a><br>
+        <a href="/watchtable/managerjoin">/watchtable/managerjoin(Guest)</a><br>
+    </th:block>
+</th:blotck>

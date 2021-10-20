@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{/layout/base :: setContent(~{this::content})}">
+    <th:block th:fragment="content">
+        <h1 class="mt-4">Detailed Page</h1>
+        <a href="http://localhost:8080/">/watchtable/main(All)</a><br>
+        <a href="/watchtable/login">/watchtable/login(Guest)</a><br>
+        <a href="/watchtable/myinfo">/watchtable/myinfo(Member)</a><br>
+        <a href="/watchtable/manage">/watchtable/manage(Business member)</a><br>
+        <a href="/watchtable/admin">/watchtable/admin(Admin)</a><br>
+    </th:block>
+</th:block>
